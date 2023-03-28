@@ -25,6 +25,8 @@ Dichiariamo chi ha vinto.
 
 ## STEPS
 
+---
+
 ### **Palidroma**
 
 1. Genero un prompt dove chiedo all'utente di inserire una parola;
@@ -33,3 +35,14 @@ Dichiariamo chi ha vinto.
 4. Trovo un modo se possibile di invertire l'ordine dell'array;
 5. Confronto la stringa invertita con la parola inserita;
 6. Se mi risultano uguali la parola inserita è palindroma e genero un output col messaggio "la parola inserita è palindroma;
+
+---
+
+### **Pari e Dispari**
+
+1. Genero un prompt dove chiedo all'utente di scegliere pari o dispari; (forse è meglio tramite un bottone)
+2. Genero un prompt dove chiedo all'utente di inserire un numero;
+3. Genero un numero random per il computer;
+4. Sommo i due numeri (utente + computer);
+5. Tramite una funzione capisco se il numero uscito dalla somma è pari o dispari;
+6. In base alla scelta dell'utente stabilisco il vincitore.
