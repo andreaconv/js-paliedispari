@@ -20,8 +20,12 @@ console.log(parolaInvertita);
 
 //5. Confronto la stringa invertita con la parola inserita;
 
-if (parolaUtente === parolaInvertita){
-  console.log("la parola è palindroma");
-}else{
-  console.warn("inserire un'altra parola");
-}
+// if (parolaUtente === parolaInvertita){
+//   console.log("la parola è palindroma");
+// }else{
+//   console.warn("inserire un'altra parola");
+// }
+
+//OPERATORE TERNARIO
+
+const message = (parolaUtente === parolaInvertita) ? console.log("la parola è palindroma") : console.warn("inserire un'altra parola");
