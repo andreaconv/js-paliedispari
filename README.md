@@ -21,3 +21,15 @@ Dichiariamo chi ha vinto.
 
 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
+---
+
+## STEPS
+
+### **Palidroma**
+
+1. Genero un prompt dove chiedo all'utente di inserire una parola;
+2. Mi salvo la parola in una variabile;
+3. Inserisco la parola in un array;
+4. Trovo un modo se possibile di invertire l'ordine dell'array;
+5. Confronto la stringa invertita con la parola inserita;
+6. Se mi risultano uguali la parola inserita è palindroma e genero un output col messaggio "la parola inserita è palindroma;
