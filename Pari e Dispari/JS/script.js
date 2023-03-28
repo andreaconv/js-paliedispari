@@ -1,15 +1,13 @@
 
 const pari = "pari";
 const dispari = "dispari";
+let winner;
 
 // INPUT 
 // 1. 
 const sceltaUtente = prompt("scegliere e inserire pari o dispari");
-// 2.
-const numeroUtente = parseInt(prompt("inserire un numero da 1 a 5"));
 
 // capisco se l'utente ha scelto pari o dispari
-
 if (sceltaUtente === pari){
   console.log("l'utente ha scelto pari");
 }else if(sceltaUtente === dispari){
@@ -18,9 +16,11 @@ if (sceltaUtente === pari){
   console.warn("l'utente ha scritto male");
 }
 
+// 2.
+const numeroUtente = parseInt(prompt("inserire un numero da 1 a 5"));
 console.log("numeroUtente", numeroUtente);
 
-// 3. genero un numero random per il computer utilizzando una funzione
+// 3. genero un numero random per il computer utilizzando una funzione;
 const numeroComputer = generoNumeroRandom(1, 5)
 console.log("numeroComputer", numeroComputer);
 
@@ -28,10 +28,17 @@ console.log("numeroComputer", numeroComputer);
 const somma = numeroUtente + numeroComputer;
 console.log("somma", somma);
 
-// 5. 
-
+// 5. Tramite una funzione capisco se il numero uscito dalla somma è pari o dispari;
 const esitoSomma = pariOdis (somma);
 console.log("esitoSomma", esitoSomma);
+
+// 6. In base alla scelta dell'utente stabilisco il vincitore.
+if (esitoSomma === sceltaUtente){
+  winner = `Il vincitore è l'utente`
+}else {
+  winner = `Il vincitore è il computer`
+}
+console.log(winner);
 
 
 // FUNZIONE che mi genera un numero random 
